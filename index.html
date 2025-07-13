@@ -3,11 +3,17 @@
   <head>
     <meta charset="UTF-8" />
     <title>Flashcard Exams</title>
+    <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
-    <h1>Select an Exam</h1>
-    <ul id="exam-list"></ul>
-
+    <div id="app">
+      <h1>📚 Flashcard Exams</h1>
+      <ul id="exam-list" class="exam-list"></ul>
+      <button id="import-exam-btn" class="import-button">
+        ➕ Import Exam Folder
+      </button>
+      <ul id="exam-list" class="exam-list"></ul>
+    </div>
     <script src="renderer.js"></script>
   </body>
 </html>

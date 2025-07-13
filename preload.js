@@ -6,4 +6,5 @@ contextBridge.exposeInMainWorld("api", {
     ipcRenderer.invoke("get-exam-information", folder),
   getFlashcardImages: (folder) =>
     ipcRenderer.invoke("get-flashcard-images", folder),
+  importExamFolder: () => ipcRenderer.invoke("import-exam-folder"),
 });
